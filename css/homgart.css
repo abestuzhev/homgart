@@ -1,0 +1,238 @@
+.homgart-about {
+    box-sizing: border-box;
+    padding: 90px 30px 0;
+}
+
+.homgart-about * {
+    box-sizing: border-box;
+}
+
+.homgart__title {
+    text-align: center;
+    font-size: 42px;
+    line-height: 1.23;
+    color: #000000;
+    padding-bottom: 20px;
+    font-weight: 300;
+    font-family: 'Roboto';
+}
+
+.homgart-about__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    /*margin-left: -10px;*/
+    /*margin-right: -10px;*/
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.homgart-about__col {
+    width: 50%;
+    padding: 20px 20px 0;
+}
+
+.homgart-about__img {
+    /*padding-right: 18%;*/
+
+}
+.homgart-about__img-card {
+    padding-top: 40%;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.homgart-about__text {
+    color: #000;
+    font-size: 16px;
+    line-height: 1.55;
+    font-weight: 300;
+    font-family: 'Roboto';
+    /*padding-left: 18%;*/
+
+}
+
+
+.homgart-alcove {
+
+}
+
+.homgart-alcove__list {
+    list-style: none;
+    padding-right: 80px;
+}
+
+.homgart-alcove__item {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.homgart-alcove-card {
+    display: table;
+}
+
+.homgart-alcove-card::after {
+    content: '';
+    clear: both;
+    display: table;
+
+}
+
+.homgart-alcove-card__img {
+    /*float: left;*/
+    width: 100px;
+    height: 70px;
+    background-color: #eee;
+    display: table-cell;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.homgart-alcove-card__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.homgart-alcove-card__body {
+    margin-left:110px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.homgart-alcove-card__title {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: middle;
+}
+
+
+.t-slds__description {
+    position: absolute;
+    z-index: 30;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    text-align: center;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    max-width: 80%;
+    color: #000000;
+}
+
+.t604__imgwrapper .t-slds__bgimg {
+    bottom: 30px;
+}
+
+.t030__title {
+    padding-bottom: 0 !important;
+    /*margin-bottom: 0 !important;*/
+}
+
+.t030__descr {
+    margin-bottom: 20px;
+}
+
+.alcove-constructor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.homgart-filter {
+    text-align: center;
+    /*margin-bottom: 20px;*/
+    background-color: #efefef;
+    max-width: 937px;
+    padding: 10px;
+    margin: 0 auto 20px;
+    border-radius: 5px;
+}
+
+.homgart-filter__item {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.homgart-filter__name {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.2;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: middle;
+}
+
+/*homgart-select-------------*/
+.homgart-select {
+    font-family: 'Roboto', sans-serif;
+    vertical-align: middle;
+    width: 100px;
+    height: 43px;
+    /*width: 16px;*/
+    /*line-height: 43px;*/
+    padding-left: 20px;
+}
+
+.alcove-constructor .SumoSelect {
+    vertical-align: middle;
+    width: 120px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.alcove-constructor .SelectBox {
+    padding: 10px 14px;
+    font-family: 'Roboto', sans-serif;
+    border:2px solid #1d5eb6;
+    border-radius: 5px;
+}
+
+.SumoSelect > .optWrapper > .options {
+    padding-left: 0 !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+.SumoSelect > .optWrapper > .options  li.opt {
+    padding: 4px 6px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.alcove-constructor-fake {
+    width: 100%;
+    text-align: center;
+}
+
+.alcove-constructor-fake img {
+    width: auto;
+    height: auto;
+}
+
+
+@media screen and (max-width: 1600px) {
+    .homgart-alcove__list {
+        padding-right: 30px;
+    }
+}
