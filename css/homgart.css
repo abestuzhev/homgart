@@ -156,7 +156,7 @@
 }
 
 .alcove-constructor {
-    max-width: 1200px;
+    max-width: 902px;
     margin: 0 auto;
 }
 
@@ -235,4 +235,10 @@
     .homgart-alcove__list {
         padding-right: 30px;
     }
+}
+
+.model-base__grass {
+    position: absolute;
+    bottom: 28px;
+    z-index: 999;
 }
