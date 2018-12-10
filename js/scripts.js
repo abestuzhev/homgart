@@ -1,6 +1,8 @@
 $(document).ready(function () {
     $('.homgart-select').SumoSelect();
 
+
+    /*новые скрипты --------------*/
     /*функция показа модального окна*/
     function showPopup(icon, popup) {
         $(document).on('click', icon, function (e) {
