@@ -2,6 +2,55 @@ $(document).ready(function () {
     $('.homgart-select').SumoSelect();
 
 
+
+    $(window).load(function(){
+        $('.list').resizeItems({target: '.list_item'});
+    });
+
+    $.fn.resizeItems = function(options) {
+        var settings = {
+            target: null
+        };
+        return this.each(function() {
+            if (options) {$.extend(settings, options);}
+
+            var $this = $(this);
+            var $items = $(settings.target);
+            var top = $items[0].offsetTop;
+            var arrHeight = [];
+            var arrItems = [];
+
+            for(var i = 0; i < $items.length; i++){
+                $items[i].style.height = 'auto';
+            }
+
+            for(var i = 0; i < $items.length; i++){
+                if(top != $items[i].offsetTop){
+                    arrHeight.sort(function(a,b){return b-a});
+                    for(var j = 0; j < arrItems.length; j++){
+                        arrItems[j].style.height = arrHeight[0] + 'px';
+                    }
+                    top = $items[i].offsetTop;
+                    arrHeight.length = arrItems.length = 0;
+                    i = i-1;
+                    continue;
+                }
+                arrHeight[arrHeight.length] = $items[i].offsetHeight;
+                arrItems[arrItems.length] = $items[i];
+            }
+            arrHeight.sort(function(a,b){return b-a});
+            for(var j = 0; j < arrItems.length; j++){
+                var pad = $(arrItems[j]).css('padding').replace(/[px ].+/, '');
+                pad *= 2;
+                arrItems[j].style.height = arrHeight[0] - pad + 'px';
+            }
+
+
+        })
+    }
+
+});
+
     /*новые скрипты --------------*/
     /*функция показа модального окна*/
     function showPopup(icon, popup) {
@@ -46,3 +95,4 @@ $(document).ready(function () {
 
     showPopup('.model-instruction-btn','.popup-instruction');
 });
+

@@ -238,6 +238,178 @@
 }
 
 
+/*--------------------------------------------------*/
+/*------------блок сос списком беседок--------------*/
+/*--------------------------------------------------*/
+.homgart__title {
+    text-transform: uppercase;
+}
+
+
+.homgart-layout {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.homgart-layout::after {
+    content:'';
+    clear:both;
+    display: table;
+}
+
+.homgart-arbor {
+    font-family: Roboto, sans-serif;
+}
+
+/*стили с homgart.com*/
+
+.homgart-arbor .list{
+    /*border-top:2px solid #99bf4c;*/
+    padding:5px 0;
+}
+.homgart-arbor .list::after {
+    content:'';
+    clear:both;
+    display: table;
+}
+.homgart-arbor .list.top_list{
+    padding-top:20px;
+
+}
+.homgart-arbor .list_item_size{
+    clear:both;
+    position: relative;
+}
+.homgart-arbor .list_pic{
+    height:20px;
+    float:left;
+    width:65px;
+    margin:5px 0 3px;
+    margin-right:20px;
+    background:url(../img/arbor/list_pic.png) 0 0 no-repeat;
+    padding-top:61px;
+    text-align:center;
+    font-size:14px;
+    color:#385a96;
+    font-weight:bold;
+    text-decoration:none;
+}
+.homgart-arbor .list_item_size_comment{
+    padding-top:30px;
+    display: inline-block;
+    font-size:22px;
+    color: #385a96;
+}
+
+.homgart-arbor .list_grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.homgart-arbor .list_item{
+    display:block;
+    /*float:left;*/
+    border:1px solid #e5e5e5;
+    width:16%;
+    background:#fff;
+    padding:10px;
+    margin: 1%;
+    color:#404040;
+    position:relative;
+    /*min-height: 223px;*/
+}
+.homgart-arbor .list_item:hover{
+    border:1px solid #385a96;
+    text-decoration:none;
+}
+.homgart-arbor .list_item img{
+    width:180px;
+    margin:15px 0 35px;
+}
+
+.homgart-arbor .list_item span.list_price{
+    font-family: Roboto, sans-serif;
+    color:#385a96;
+    font-size:16px;
+    position:absolute;
+    bottom:30px;
+    right:10px;
+}
+.homgart-arbor .list_item_img_wrap{
+    width:180px;
+    display:table-cell;
+    vertical-align: middle;
+}
+.homgart-arbor .list_item_tit{
+    display: inline-block;
+    width:180px;
+    text-decoration: none;
+}
+
+.homgart-arbor .l_name {
+    color: #1d5eb6;
+}
+
+.homgart-arbor .list_link{
+    position:absolute;
+    bottom:8px;
+    right:10px;
+    text-decoration: underline;
+    display: inline-block;
+    height:16px;
+    padding:3px 8px;
+    text-align:center;
+    color: #1d5eb6;
+}
+
+.homgart-arbor .list_link:hover{
+    text-decoration: none;
+    background:#1d5eb6;
+    border-radius: 4px;
+    color:#fff;
+}
+
+
+@media (max-width:1160px){
+    .homgart-arbor .list_item {
+        width: 20%;
+    }
+
+    .homgart-arbor .list_item img {
+        width: 100%;
+    }
+
+    .alcove-constructor-fake img {
+        width: 90%;
+    }
+}
+
+
+
+@media (max-width:890px){
+    .homgart-arbor .list_item {
+        width: 20%;
+    }
+
+}
+
+@media (max-width:750px){
+    .homgart-arbor .list_item {
+        width: 26%;
+    }
+}
+
+@media (max-width:550px){
+    .homgart-arbor .list_item {
+        width: 40%;
+    }
+}
+
+
 /*СТИЛИ 10.12.2018---------------*/
 
 .model-base__grass {
@@ -510,3 +682,4 @@
         background-color: #1d5eb6;
     }
   
+
