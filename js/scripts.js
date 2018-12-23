@@ -49,6 +49,23 @@ $(document).ready(function () {
         })
     }
 
+    $(document).on('click', '.js-popup-close', function (e) {
+        e.preventDefault();
+        var $html = $('html');
+        $(this).parents('.mfp-wrap').removeClass('is-visible');
+        $('.mfp-bg').removeClass('is-visible');
+        $html.css({
+            'margin-right':'0'
+        }).removeClass('lock-html');
+        $('.wrapper').removeClass('fixed-input');
+        $('.header.sticky').css({
+            // 'right':'0'
+        });
+
+
+    });
+
+    showPopup('.model-instruction-btn','.popup-instruction');
 });
 
     /*новые скрипты --------------*/
@@ -77,22 +94,5 @@ $(document).ready(function () {
         });
     }
 
-    $(document).on('click', '.js-popup-close', function (e) {
-        e.preventDefault();
-        var $html = $('html');
-        $(this).parents('.mfp-wrap').removeClass('is-visible');
-        $('.mfp-bg').removeClass('is-visible');
-        $html.css({
-            'margin-right':'0'
-        }).removeClass('lock-html');
-        $('.wrapper').removeClass('fixed-input');
-        $('.header.sticky').css({
-            // 'right':'0'
-        });
 
-
-    });
-
-    showPopup('.model-instruction-btn','.popup-instruction');
-});
 
