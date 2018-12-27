@@ -715,3 +715,275 @@
 #contentVideo a:hover {
     color: pink;
 }
+
+
+
+
+.sale {
+    position: relative;
+    background: #fff url(../img/sale/sale-banner.jpg) 50% 50% no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    /*min-height: 970px;*/
+    height: 53vw;
+    margin-bottom: 30px;
+    font-family: 'Roboto',sans-serif;
+}
+
+.sale-layout {
+    max-width: 1167px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+.sale-header {
+    padding-top: 120px;
+    text-align: center;
+}
+
+.sale-title {
+    font-size: 59px;
+    color: #f92e5e;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.18);
+    line-height: 1;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-bottom: 14px;
+}
+
+
+.sale-title span {
+    color: #fff;
+}
+
+.sale-subtitle {
+    line-height: 1.2;
+    font-size: 33px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.sale-text {
+    line-height: 1;
+    color: #ffffff;
+    font-size: 26px;
+}
+
+.sale-specifications {
+    position: absolute;
+    top: 47%;
+    right: 0;
+    width: 230px;
+    font-family: 'Roboto',sans-serif;
+
+}
+.sale-specifications__title {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+    line-height: 1.1;
+    color: #ffffff;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.18);
+    margin-bottom: 13px;
+}
+
+.sale-specifications__list {
+    list-style: none;
+    padding: 0 !important;
+    margin: 0;
+}
+
+.sale-specifications__item {
+    font-size: 19px;
+    color: #ffffff;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.18);
+    line-height: 1;
+    margin-bottom: 14px;
+    padding: 0;
+}
+
+.sale-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    border-bottom: 1px dashed #fff;
+    border-top: 1px dashed #fff;
+}
+
+.sale-footer::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.sale-footer__title {
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+    max-width: 450px;
+    line-height: 1.1;
+    padding: 22px 0;
+    float: left;
+    margin-right: 30px;
+}
+.sale-footer__title span {
+    font-size: 33px;
+}
+.sale-footer__order {
+    padding: 25px 0;
+    float: right;
+}
+.sale-btn {
+    display: inline-block;
+    background-color: #e82558;
+    font-size: 22px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #ffffff !important;
+    padding: 14px 36px;
+    border-radius: 6px;
+    transition: all .2s ease;
+}
+.sale-btn:hover {
+    display: inline-block;
+    background-color: #c6254f;
+    transition: all .2s ease;
+}
+
+.sale-footer__timer {
+    float: left;
+    padding: 10px 0;
+}
+
+@media (max-width:1680px) {
+    .sale-header {
+        padding-top: 85px;
+    }
+
+    .sale-title {
+        font-size: 45px;
+        margin-bottom: 8px;
+    }
+    .sale-subtitle {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+    .sale-text {
+        font-size: 19px;
+    }
+
+    .sale-specifications {
+        top: 41%;
+        right: 4%;
+    }
+}
+
+@media (max-width:1340px) {
+    .sale-specifications {
+        display: none;
+    }
+
+    .sale {
+        height: 710px;
+    }
+
+    .sale-layout {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width:1120px) {
+    .sale-btn {
+        padding: 14px 16px;
+    }
+
+    #CDT .caption {
+        display: none;
+    }
+
+    .sale-footer__order {
+        padding: 22px 0;
+    }
+
+    .sale-footer__title {
+        color: #ffffff;
+        font-size: 24px;
+        max-width: 400px;
+        margin-right: 10px;
+    }
+    .sale-footer__title span {
+        font-size: 26px;
+    }
+}
+@media (max-width:1000px) {
+    .sale-footer__timer {
+        display: none;
+    }
+
+    .sale-header {
+        padding-top: 60px;
+    }
+
+    .sale-title {
+        font-size: 38px;
+        margin-bottom: 8px;
+    }
+    .sale-subtitle {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .sale-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:780px) {
+    .sale {
+        background: url(../img/sale/sale-banner-mobile.jpg) 50% 50% no-repeat;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .sale-footer {
+        position: static;
+        padding: 14px 0;
+        text-align: center;
+    }
+
+    .sale-header {
+        max-width: 500px;
+        margin: 0 auto 24px;
+    }
+
+    .sale-footer__order,
+    .sale-footer__title {
+        float: none;
+        padding: 0;
+    }
+
+    .sale-footer__title {
+        max-width: 400px;
+        text-align: center;
+        margin: 0 auto 14px;
+    }
+
+    .sale-footer__title,
+    .sale-footer__title span {
+        font-size: 20px;
+    }
+
+    .sale-title {
+        font-size: 32px;
+    }
+    .sale-subtitle {
+        font-size: 20px;
+    }
+}
