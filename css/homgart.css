@@ -885,24 +885,26 @@
     }
 }
 
-@media (max-width:1340px) {
+@media (max-width:1370px) {
     .sale-specifications {
         display: none;
     }
 
     .sale {
-        height: 710px;
+        height: 660px;
     }
 
     .sale-layout {
         padding: 0 20px;
     }
-}
 
-@media (max-width:1120px) {
     .sale-btn {
         padding: 14px 16px;
     }
+}
+
+@media (max-width:1120px) {
+    
 
     #CDT .caption {
         display: none;
@@ -922,7 +924,7 @@
         font-size: 26px;
     }
 }
-@media (max-width:1000px) {
+@media (max-width:1030px) {
     .sale-footer__timer {
         display: none;
     }
